@@ -19,6 +19,16 @@ class _MyAppState extends State<MessageApp> {
       title: 'WhatsApp Clone',
       home: Scaffold(
         backgroundColor: Colors.black,
+        bottomNavigationBar:  BottomNavigationBar(
+          backgroundColor: Colors.transparent,
+          items:  const [
+            BottomNavigationBarItem(icon: Icon(Icons.update),label: "update",backgroundColor: Colors.black),
+            BottomNavigationBarItem(icon: Icon(Icons.call),label: "call"),
+            BottomNavigationBarItem(icon: Icon(Icons.groups_3_outlined),label: "communities"),
+            BottomNavigationBarItem(icon: Icon(Icons.chat),label: "chat"),
+            BottomNavigationBarItem(icon: Icon(Icons.settings),label: "settings"),
+          ]
+          ),
         appBar: AppBar(
           actions: const [
             Icon(Icons.camera_alt_outlined,color: Colors.white,),
